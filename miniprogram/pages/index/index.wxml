@@ -1,0 +1,20 @@
+<!--miniprogram/pages/index/index.wxml-->
+<!--index.wxml-->
+<view id="title">上传你的知识条，可以在“知识库”中查看</view>
+<view id="card">
+  <form bindsubmit="submitform">
+<view class="input">名称：
+<input name="conception" value="{{conception}}"placeholder=" 请输入词语或短语名称" />
+</view>
+<view class="input"> 英文名：
+<input name="english" value="{{english}}" placeholder=" 英文翻译（可不填）" />
+</view>
+<view class="meaning">解释：
+<textarea name="meaning" value="{{meaning}}" placeholder=" 请输入释义" />
+</view>
+<view class="button">
+  <button  form-type="submit">提交</button>
+  <button bindtap="back"> 返回</button>
+</view>
+</form>
+</view>
